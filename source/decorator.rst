@@ -69,7 +69,7 @@ If a constraint is met the function should raise an `exceptions.Warning` with ap
 This decorator will trigger the call to the decorated function if any of the
 fields specified in the decorator is altered by ORM or changed in the form: ::
 
-    @pid.depends('name', 'an_other_field')
+    @api.depends('name', 'an_other_field')
     def afun(self):
         pass
 
